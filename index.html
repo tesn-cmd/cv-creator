@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/f9f616b236.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Login-System</title>
+</head>
+<body onload="redirect()">
+  <div class="main-container">
+    <header class="header">
+      <div class="logo">
+        TeSn
+      </div>
+      <button id="logbtn" data-tab-for="login">login</button>
+      <button id="signbtn" data-tab-for="signup">Create Account</button>
+    </header>
+    <div class="direct" id="direct">
+      <h1>Loading...</h1>
+    </div>
+    <main class="container hide active-tab" id="login">
+      <div class="web">
+        <p class="best1">
+          We create resume that is outstanding with the best design.
+        </p>
+        <p class="best">
+          Have yourself a copy by just creating an account and give all the necessary information.
+        </p>
+        <img src="images/typing.jpeg" class="offer" alt="" width="100%" />
+        <img src="images/typing1.jpeg" class="offer1" alt="" width="100%" />
+      </div>
+      <div class="forms">
+
+        <form action="" class="my-form">
+          <h3>log in</h3>
+          <span id="logError"></span>
+          <input type="text" class="input" id="my-name" placeholder="email/username">
+          <div class="passShow">
+            <input type="password" class="input" id="userpass" placeholder="password">
+            <span class="fa fa-eye faEye"></span>
+          </div>
+          <button class="btn" id="log">log in</button>
+          <a class="forgot" id="forgot" href="resetPassword.html">forgot password</a>
+        </form>
+
+      </div>
+    </main>
+
+    <main class="container hide" id="signup">
+      <div class="forms">
+
+        <form class="my-form">
+          <h3>Register</h3>
+          <span class="regError" id="regError"></span>
+          <input type="text" class="input" id="fname" placeholder="first-name">
+          <input type="text" placeholder="last-name" id="lname">
+          <input type="text" placeholder="nationality" id="nationality">
+          <input type="tel" placeholder="tel: 113-456-789" id="contacts">
+          <input type="text" name="" id="username" placeholder="username">
+          <input type="email" name="" id="email" placeholder="email">
+          <label for="gender" class="gender">gender
+            <select class="option" name="" id="gender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+              <option value="other">other</option>
+            </select>
+          </label>
+          <label for="age" class="age">date of birth
+            <input class="date" type="date" name="" id="date" value="" />
+          </label>
+          <input type="password" name="" id="password" placeholder="password">
+          <input type="password" name="" id="lpassword" placeholder="re-enter password">
+          <button class="btn" id="submit"><a class="" href="#regError"></a>submit</button>
+        </form>
+      </div>
+    </main>
+    <footer class="bottom" id="bottom">
+
+      <div class="connect">
+        <h3>contact us</h3>
+      </div>
+      <div class="contacts">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer">
+        <p>
+          All Rights Reserved&copy;2020
+        </p>
+        <p>
+          tesn production
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/f9f616b236.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/home.css" type="text/css" media="all" />
+  <title>home-page</title>
+</head>
+<body onload="showForm()">
+  <header class="header" id="header">
+    <div class="logo">
+      TeSn
+    </div>
+    <button id="logout" type="submit" class="logout">logout</button>
+  </header>
+  <div class="loginError">
+    <h1>please log in to access this page..</h1>
+  </div>
+  <div class="title" id="title">
+    <img class="img" src="images/back.jpg" alt="city" />
+    <h2 class="greet"></h2>
+    <h2 class="text">
+      welcome and thank you for choosing to create your CV(curriculumn vitae) with us.
+    </h2>
+  </div>
+  <div class="input" id="other-info">
+    <h3>
+      Please fill the form below to complete your portfolio
+    </h3>
+    <form class="my-form">
+      <p>
+        Q. please tap on the upload button below to upload your image
+      </p>
+      <label for="file" class="file">upload image</label><br />
+      <span id="imgDetails"></span>
+      <input
+      type="file"
+      name="image"
+      id="file"
+      accept="image/*"
+      style="display:none"
+      />
+      <p>
+        Q. tell us about your personal character
+      </p>
+      <textarea name="" id="personal" rows="6" cols="40" placeholder="personal character"></textarea>
+      <p>
+        Q. tell us about your experience in programming
+      </p>
+      <textarea name="" id="experience" placeholder="programming experience" rows="6" cols="40"></textarea>
+      <p>
+        Q. which institution did you study programming at?
+      </p>
+      <input type="text" id="institution" placeholder="name of institution" />
+      <p>
+        Q. what qualifications did you obtain?
+      </p>
+      <input type="text" id="qualifications" placeholder="enter your qualifications" />
+      <p>
+        Q. years of study?
+      </p>
+      <input type="tel" id="years" class="years" placeholder="2000-2004" />
+      <p>
+        Q. list of hobbies
+      </p>
+      <input type="text" id="hobbies" placeholder="e.g reading,jogging" />
+
+      <button type="submit" id="submit">submit</button>
+
+    </form>
+  </div>
+  <div class="docs">
+
+    <div class="editSave">
+      <button id="edit"> <i class="fa fa-edit"></i>edit</button>
+      <button id="save"> <i class="fa fa-save"></i>save</button>
+    </div>
+  </div>
+
+  <div class="cv">
+    <section class="section">
+      <h2 class="secH1">curriculumn vitae</h2>
+      <img id="imgOutput" src="" alt="" width=250 height="250" />
+      <table class="my-table">
+      </table>
+      <h4>about me</h4>
+      <div id="about" class="info"></div>
+      <h4>qualifications</h4>
+      <table id="res-output" class="res-output">
+      </table>
+      <h4>experience</h4>
+      <div id="exp-output" class="info">
+
+      </div>
+      <h4>hobbies</h4>
+      <ul id="hob-output" class="hob-output">
+      </ul>
+    </section>
+  </div>
+  <div class="bottom" id="bottom">
+
+    <div class="connect">
+      <h3>contact us</h3>
+    </div>
+    <div class="contacts">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <footer class="footer">
+      <p>
+        All Rights Reserved&copy;2020
+      </p>
+      <p>
+        tesn production
+      </p>
+    </footer>
+  </div>
+  <script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
