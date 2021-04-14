@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #3e4e53;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: #318aee;
+  font-weight: bold;
+  font-style: italic;
+  margin: 15px 0;
+}
+.search-text {
+  color: #38e2f5;
+  margin: 10px 0;
+}
+.search-div {
+  display: flex;
+}
+.search {
+  padding: 10px;
+  border: 1px solid #2db2d3;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  outline: none;
+  background: none;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #242f32;
+}
+.fahome {
+  padding: 8px;
+  background: none;
+  color: #1ec6ef;
+  border: 1px solid #2db2d3;
+  outline: none;
+  border-radius: 10px;
+}
+.fasearch {
+  padding: 8px;
+  background: none;
+  color: #1ec6ef;
+  border: 1px solid #2db2d3;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+}
+.fa:hover {
+  border: 1px solid #3f26cc;
+  color: #3f26cc;
+}
+.error {
+  display: none;
+  padding: 5px;
+  background: #96a7ab;
+  border: 1px solid #ff0700;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+.reset-form {
+  display: none;
+}
+.user-info {
+  color: #318aee;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 10px;
+  background: none;
+  border: 1px solid #34bddf;
+  border-radius: 10px 0 0 10px;
+  margin: 10px 0;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+
+.forms {
+  display: flex;
+
+}
+
+.faEye {
+  padding: 8px;
+  margin: 10px 0;
+  background: none;
+  color: #1ec6ef;
+  border: 1px solid #2db2d3;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+}
+.form button {
+  padding: 10px;
+  border: 1px solid #3c86e7;
+  background: #1a935f;
+  color: #fff;
+  border-radius: 10px;
+  margin: 5px 0;
+  outline: none;
+  width: 50%;
+  align-self: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.form input:hover {
+  border: 1px solid #253df2;
+}
+.form button:hover {
+  border: 1px solid #253df2;
+  background: #0d8c35;
+}

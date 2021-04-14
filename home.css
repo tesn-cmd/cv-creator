@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(66,82,100);
+  background-size: cover;
+  color: #fff;
+  font-family: Georgia;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background: #22292b;
+  border-bottom: 1px solid #1e5d6c;
+}
+.logo {
+  border: 2px solid #29aaf1;
+  border-right: none;
+  color: #29aaf1;
+  font: 18px Cursive;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 10px;
+  background: #455559;
+  text-shadow: 1px 1px 2px #263234;
+}
+.header button {
+  padding: 5px;
+  color: #fff;
+  border: 1px solid #1da9cc;
+  font-style: italic;
+  border-radius: 10px;
+  background: #414e51;
+  margin-right: 10px;
+  outline: none;
+}
+.logout:hover {
+  background: #254a53;
+  color: #1018de;
+}
+.span {
+  color: #0d4ea3;
+}
+.welcome {
+  margin-bottom: 20px;
+}
+.loginError {
+  display: none;
+  text-align: center;
+  font-style: italic;
+  padding: 7px;
+  margin-top: 40px;
+}
+.title {
+  height: 200px;
+  text-shadow: 0 0 2px #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+}
+.img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+  height: 100%;
+}
+.greet, .text {
+  z-index: 1;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 8px;
+  background: #fff;
+}
+.section p {
+  margin: 15px 0 5px;
+  color: #000;
+}
+.section h4 {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0 5px;
+  color: #000;
+  font-style: italic;
+}
+.section h2 {
+  color: #000;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}
+.my-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+.my-table tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 5px;
+}
+
+.my-table th {
+  width: 20%;
+  text-align: left;
+  margin-right: 10px;
+}
+.my-table td {
+  width: 70%;
+  text-align: left;
+  outline: none;
+}
+.input {
+  padding: 10px;
+}
+
+.input h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.input p {
+  color: #fff;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.my-form {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cv {
+  display: none;
+  width: 100%;
+}
+.my-form textarea {
+  background: none;
+  border: 1px solid #1470ce;
+  outline: none;
+  padding: 10px;
+  align-self: flex-start;
+  border-radius: 10px;
+  margin: 5px 0 10px;
+  color: #fff;
+}
+.my-form button {
+  padding: 5px;
+  border: 1px solid #1470ce;
+  border-radius: 10px;
+  margin-top: 8px;
+  background: #23384a;
+  color: #fff;
+  outline: none;
+  align-self: flex-start;
+  width: 70px;
+  font: 17px italic;
+}
+.info {
+  color: #000;
+  width: 100%;
+  outline: none;
+  height: 100%;
+}
+.file {
+  border: 1px solid #ffffff;
+  padding: 5px;
+}
+.my-form input[type=text] {
+  padding: 10px;
+  border: 1px solid #1470ce;
+  border-radius: 10px;
+  background: none;
+  align-self: flex-start;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  margin-top: 5px;
+}
+.years {
+  padding: 10px;
+  border: 1px solid #1470ce;
+  border-radius: 10px;
+  background: none;
+  align-self: flex-start;
+  text-align: center;
+  outline: none;
+  color: #fff;
+}
+.res-output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+.res-output tr {
+  display: flex;
+  width: 100%;
+  border: 1px solid #000;
+  justify-content: space-between;
+  border-bottom: none;
+  padding: 5px;
+}
+.hob-output {
+  color: #000;
+  text-align: left;
+  width: 100%;
+}
+.hob-output li {
+  list-style: none;
+  margin: 5px;
+  outline: none;
+  height: 100%;
+}
+.res-output th {
+  width: 30%;
+  text-align: left;
+  margin-right: 10px;
+}
+.res-output td {
+  width: 30%;
+  text-align: left;
+  outline: none;
+}
+.personal-details th {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.section .file {
+  border: 2px solid #32badd;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #18a8cc;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.editSave {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.docs {
+  width: 100%;
+  display: none;
+}
+.editSave button {
+  padding: 10px;
+  background: none;
+  color: #1ec0e9;
+  border: 1px solid #09596c;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 8px #000;
+}
+.editSave button:hover {
+  background: #47c0de;
+  color: #354246;
+
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #283133;
+}
+.connect {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.connect h3 {
+  font-style: italic;
+}
+
+.contacts {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #20a3f5;
+  border-radius: 10px;
+  border-top: none;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+}
+#imgOutput {
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width:500px) {
+  .header {
+    height: 6em;
+  }
+  .logo {
+    font: 25px Cursive;
+  }
+  .cv {
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section {
+    padding: 30px;
+    max-width: 650px;
+  }
+  .title {
+    height: 400px;
+  }
+  .title h2 {
+    padding: 0 80px;
+    font-size: 30px;
+    font-style: Cursive;
+  }
+  .contacts {
+    width: 50%;
+  }
+  .editSave {
+    width: 100%;
+    padding: 0 25%;
+  }
+}
