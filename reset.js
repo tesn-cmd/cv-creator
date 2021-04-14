@@ -14,10 +14,11 @@ const back = document.getElementById('back');
 const savedUsers = localStorage.getItem('users');
 const users = JSON.parse(savedUsers);
 userAcc = [];
-
+/*
 back.addEventListener('click', ()=> {
   window.location.pathname = 'index.html';
 })
+*/
 search_btn.addEventListener('click', searchEmail);
 
 showPass.forEach(showbtn=> {
