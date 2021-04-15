@@ -163,7 +163,7 @@ function validateUser(user, e) {
       remove();
       storeUsers(users);
       console.log(users[i]);
-      document.location.pathname = "./home.html";
+      document.location.pathname = "./cv-creator/home.html";
       return;
     }
   }
@@ -201,7 +201,7 @@ function redirect() {
       logDisplay.style.display = "none";
       bottom.style.display = "none";
       header.style.display = "none";
-      document.location.pathname = './home.html';
+      document.location.pathname = './cv-creator/home.html';
       return;
     }
   })
