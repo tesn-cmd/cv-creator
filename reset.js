@@ -14,11 +14,11 @@ const back = document.getElementById('back');
 const savedUsers = localStorage.getItem('users');
 const users = JSON.parse(savedUsers);
 userAcc = [];
-/*
+
 back.addEventListener('click', ()=> {
-  window.location.pathname = 'index.html';
+  window.location.pathname = './cv-creator/index.html';
 })
-*/
+
 search_btn.addEventListener('click', searchEmail);
 
 showPass.forEach(showbtn=> {
@@ -84,7 +84,7 @@ function resetPss(value) {
       user.password = value;
       user.lpassword = value;
       updatePass(users);
-      window.location.pathname = 'index.html';
+      window.location.pathname = './cv-creator/index.html';
     }
   });
 }
