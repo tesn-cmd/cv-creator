@@ -315,7 +315,7 @@ btn.addEventListener('click',
         localStorage.setItem('users', JSON.stringify(users));
         users[i].portFolio.isActive = false;
         storeUser(users)
-        document.location.pathname = 'index.html';
+        document.location.pathname = './cv-creator/index.html';
       }
     }
   });
@@ -327,7 +327,7 @@ function checkValue(arr) {
     editSave.style.display = "none";
     title.style.display = "none";
     bottom.style.display = "none";
-    document.location.pathname = "index.html";
+    document.location.pathname = "./cv-creator/index.html";
   }
 }
 console.log(users);
